@@ -1,6 +1,8 @@
+import Router from './router/Router.jsx'
+
 function App() {
   return (
-    <h1>Kasa</h1>
+    <Router />
   )
 }
 
