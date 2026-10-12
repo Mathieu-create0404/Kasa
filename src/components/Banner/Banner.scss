@@ -1,0 +1,21 @@
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 100px;
+    height: 220px;
+
+    h1 {
+        color: white;
+        -webkit-text-stroke: 1px black;
+        font-size: 48px;
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 0 4px 4px #00000040;
+    }
+    
+}
