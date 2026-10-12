@@ -8,23 +8,39 @@
     padding: 40px;
     gap: 40px;
 
-    .cards img {
-        width: 100%;
-        border-radius: 10px;
-        height: 100%;
-        object-fit: cover;
+}
+
+.displayButton {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 28px;
+
+    background-color: white;
+    color: #222;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: #f6f6f6;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
 
-    .cards {
-        position: relative;
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
+}
 
-    .cards h2 {
-        position: absolute;
-        bottom: 0;
-        left: 10px;
-        font-size: 18px;
-        color: white;
-        font-family: "Montserrat", sans-serif;
-    }
+.slideIn {
+    animation: slideDown 0.5s ease-out;
 }
