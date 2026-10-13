@@ -1,0 +1,90 @@
+.collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    h2 {
+        margin-bottom: 0;
+    }
+
+    h2,
+    .contentOpen,
+    .contentClose {
+        width: 70%;
+    }
+
+    .collapseButton {
+        display: flex;
+        justify-content: space-between;
+        background-color: #FF6060;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: white;
+        width: 100%;
+        font-size: 24px;
+        font-family: "Montserrat", sans-serif;
+        padding: 10px 15px;
+        position: relative;
+        z-index: 1;
+        
+
+    }
+
+    .chevron {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .chevron.open {
+        transform: rotate(180deg);
+        cursor: pointer;
+    }
+
+    @keyframes slideDown {
+    from {
+        transform: translateY(-40px);
+        max-height: 0px;
+    }
+
+    to {
+        transform: translateY(-10px);
+        max-height: 250px;
+    }
+    }
+
+    @keyframes slideUp {
+    from {
+        transform: translateY(-10px);
+        max-height: 250px;
+    }
+
+    to {
+        transform: translateY(-40px);
+        max-height: 0;
+    }
+    }
+
+    .contentClose {
+        animation: slideUp 0.3s ease forwards;
+    }
+
+    .contentOpen {
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .contentOpen,
+    .contentClose {
+        overflow: hidden;
+    }
+
+    .collapseContent {
+        border: 1px solid transparent;
+        border-radius: 5px;
+        background-color: #F6F6F6;
+        padding: 0 15px;
+        text-align: justify;
+        
+    }
+
+}
