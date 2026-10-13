@@ -1,0 +1,32 @@
+
+.pageError{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    .error,
+    .errorText,
+    .linkError {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .error{
+        font-size: 288px;
+        color: #FF6060;
+        margin: 30px;
+        font-weight: 700;
+    }
+
+    .errorText {
+        font-size: 36px;
+        color: #FF6060;
+        margin-bottom: 70px;
+    }
+
+    .linkError {
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 80px;
+    }
+}
