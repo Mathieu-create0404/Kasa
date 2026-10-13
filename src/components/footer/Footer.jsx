@@ -7,10 +7,12 @@ import './Footer.scss'
 const Footer = () => {
     return (
         <footer className="footer">
-            <img src={logo1} alt="Lettre K" />
-            <img src={logo2} alt="Logo d'une maison" />
-            <img src={logo3} alt="Lettre S" />
-            <img src={logo4} alt="Lettre a" />
+            <div className="footerImg">
+                <img src={logo1} alt="Lettre K" />
+                <img src={logo2} alt="Logo d'une maison" />
+                <img src={logo3} alt="Lettre S" />
+                <img src={logo4} alt="Lettre a" />
+            </div>
             <p>© 2020 Kasa. All rights reserved</p>
         </footer>
     )
