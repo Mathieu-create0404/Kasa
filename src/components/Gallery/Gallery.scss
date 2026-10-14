@@ -14,19 +14,12 @@
     display: block;
     margin: 30px auto;
     padding: 12px 28px;
-
-    background-color: white;
-    color: #222;
+    color: white;
+    background-color: #FF6060;
     border: 1px solid #ddd;
     border-radius: 25px;
-
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
-
-    &:hover {
-        background-color: #f6f6f6;
-    }
 }
 
 @keyframes slideDown {
