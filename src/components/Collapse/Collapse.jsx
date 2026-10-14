@@ -2,9 +2,10 @@ import { useState } from 'react'
 import Vector from '../../assets/Vector.png'
 import './Collapse.scss'
 
-const Collapse = ({ children, title }) => {
+const Collapse = ({ children, title, description }) => {
 
     const [isOpen, setOpen] = useState(false)
+    const [hasInteracted, setHasInteracted] = useState(false)
 
     return (
         <div className="collapse">
@@ -15,12 +16,15 @@ const Collapse = ({ children, title }) => {
                     {title}
                     <span 
                     className={isOpen ? "chevron open" : "chevron"}
-                    onClick={() => setOpen(!isOpen)}>
+                    onClick={() => {
+                    setOpen(!isOpen)
+                    setHasInteracted(true)
+                    }}>
                         <img src={Vector} alt="" />
                     </span>
                 </button>
             </h2>
-            <div className={isOpen ? "contentOpen" : "contentClose" }>
+            <div className={ !hasInteracted ? "contentInitial" : isOpen ? "contentOpen" : "contentClose" }>
                 <div className="collapseContent">{children}</div>
             </div>
         </div>
