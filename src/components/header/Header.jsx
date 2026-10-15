@@ -1,18 +1,12 @@
 import { NavLink } from 'react-router-dom'
-import logo1 from '../../assets/K.png'
-import logo2 from '../../assets/house.png'
-import logo3 from '../../assets/S.png'
-import logo4 from '../../assets/a.png'
+import logo from '../../assets/LOGO.png'
 import './Header.scss'
 
 const Header = () => {
     return (
         <header className="header">
             <div>
-                <img src={logo1} alt="Lettre K" />
-                <img src={logo2} alt="Logo d'une maison" />
-                <img src={logo3} alt="Lettre S" />
-                <img src={logo4} alt="Lettre a" />
+                <img src={logo} alt="Logo Kasa" />
             </div>
             <nav>
                 <NavLink to="/" end className="nav-link">Accueil</NavLink>

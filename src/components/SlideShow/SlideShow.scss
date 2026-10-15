@@ -41,3 +41,16 @@
         right: 20px;
     }
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        margin: 0 20px;
+        height: 255px;
+
+        .prev,
+        .next {
+            font-size: 50px;
+        }
+    }
+
+}

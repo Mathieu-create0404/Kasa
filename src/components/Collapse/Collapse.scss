@@ -89,7 +89,35 @@
         background-color: #F6F6F6;
         padding: 0 15px;
         text-align: justify;
-        
+
+        li {
+            font-size: clamp(12px, 2.5vw, 18px)
+        }
+
+        p {
+            font-size: clamp(12px, 2.5vw, 18px);
+        }
     }
 
+}
+
+@media (max-width: 768px) {
+    .collapse {
+        margin: 0 20px;
+
+        h2, 
+        .contentOpen,
+        .contentClose{
+            width: 100%;
+        }
+
+        .collapseButton {
+            font-size: 14px;
+        }
+
+        img {
+            width: 16px;
+            height: auto;
+        }
+    }
 }

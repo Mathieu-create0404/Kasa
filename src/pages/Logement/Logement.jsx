@@ -1,4 +1,5 @@
-import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import Logements from '../../data/logements.json'
 import Error from '../Error/Error.jsx'
 import Collapse from '../../components/Collapse/Collapse.jsx'
@@ -9,13 +10,20 @@ import './Logement.scss'
 const Logement = () => {
    
     const { id } = useParams()
+    const navigate = useNavigate()
 
     const logement = Logements.find((logement) => 
         logement.id === id 
     )
 
+    useEffect(() => {
     if (!logement) {
-        return <Error />
+        navigate('/404', { replace: true })
+        }
+    }, [logement, navigate])
+
+    if (!logement) {
+        return null
     }
    
     return (

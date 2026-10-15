@@ -11,22 +11,30 @@
     }
 
     .error{
-        font-size: 288px;
+        font-size: clamp(98px, 20vw, 288px);
         color: #FF6060;
         margin: 30px;
         font-weight: 700;
     }
 
     .errorText {
-        font-size: 36px;
+        font-size: clamp(18px, 2.5vw, 36px);
         color: #FF6060;
-        margin-bottom: 70px;
+        text-align: center;
+        margin: 10px 20px 90px 20px;
     }
 
     .linkError {
         color: black;
-        font-size: 18px;
+        font-size: clamp(14px, 2.5vw, 18px);
         font-weight: 500;
         margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .error {
+        
     }
 }

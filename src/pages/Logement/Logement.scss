@@ -23,12 +23,16 @@
 
     h2 {
         color: #FF6060;
-        font-size: 36px;
+        font-size: clamp(20px, 2.5vw, 36px);
         margin-bottom: 0;
     }
 
+    .logementInfo {
+        width: 100%;
+    }
+
     .logementInfo p {
-        font-size: 18px;
+        font-size: clamp(14px, 2.5vw, 18px);
         margin: 10px 0;
     }
 
@@ -49,7 +53,6 @@
     .logementHost {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 20px;
     }
 
@@ -57,6 +60,7 @@
         display: flex;
         gap: 10px;
         align-items: center;
+        justify-content: flex-end;
 
         img {
             width: 64px;
@@ -78,4 +82,66 @@
         gap: 10px;
     }
 
+}
+
+@media (max-width: 768px) {
+    
+    .logement {
+    
+        .logementContent {
+
+            display: flex;
+            flex-direction: column;
+
+            .logementHost {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                margin-top: 15px;
+
+                .hostInfo img {
+                    width: 32px;
+                    height: 32px;
+                }
+
+                .hostInfo p {
+                    font-size: 12px;
+                    width: 50%;
+                    margin: 0;
+                }
+            }
+            
+            margin: 0 20px;
+
+            .flexTag {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+
+                p {
+                    padding: 4px 12px;
+                    margin: 0;
+                    font-size: 12px;
+                    border-radius: 10px;
+                }
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        .collapseLogement {
+            flex-direction: column;
+            margin: 0 20px;
+            gap: 0;
+
+            .collapse {
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
 }

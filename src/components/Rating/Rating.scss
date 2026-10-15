@@ -7,3 +7,11 @@
     color: #E3E3E3;
     font-size: 25px
 }
+
+@media (max-width: 768px) {
+    .fa-solid.fa-star.active,
+    .fa-solid.fa-star {
+        font-size: 13px;
+    }
+
+}
