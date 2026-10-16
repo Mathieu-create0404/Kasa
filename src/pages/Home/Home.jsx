@@ -1,4 +1,4 @@
-import homeBanner from '../../assets/banner.png'
+import homeBanner from '../../assets/banner.webp'
 import Banner from '../../components/Banner/Banner.jsx'
 import Gallery from '../../components/Gallery/Gallery.jsx'
 

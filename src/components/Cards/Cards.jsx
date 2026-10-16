@@ -6,7 +6,7 @@ const Cards = ({ image, title, className, id }) => {
     return (
         <Link to={`/logement/${id}`} className={`cards ${className}`}>
             <img src={image} alt={title} />
-            <h2>{title}</h2>
+            <p>{title}</p>
         </Link>
     )
 }

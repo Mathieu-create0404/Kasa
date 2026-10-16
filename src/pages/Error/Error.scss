@@ -29,6 +29,13 @@
         font-size: clamp(14px, 2.5vw, 18px);
         font-weight: 500;
         margin-bottom: 80px;
+        text-decoration: none;
+
+        p:hover {
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 2px;
+        }
     }
 }
 

@@ -6,7 +6,7 @@ const Banner = ({ image, children, variant = "home" }) => {
         <section 
         className={`banner ${variant}`} 
         style={{ backgroundImage: variant === "home" ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${image})`
-        : `url(${image})`}}>
+        : `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${image})`}}>
             {children}
         </section>
     )

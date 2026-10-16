@@ -12,16 +12,12 @@
         padding: 10px 16px;
         border-radius: 10px;
         transition: background-color 0.25s ease, color 0.25s ease;
-    }
-
-    a.nav-link:hover {
-        background-color: rgba(255, 96, 96, 0.12);
-        color: #FF6060;
-    }    
+    } 
 
     .nav-link.active {
-        background-color: #FF6060;
-        color: white;
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 2px;
     }
 
     nav {
