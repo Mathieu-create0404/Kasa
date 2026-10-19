@@ -20,7 +20,15 @@
     }
 }
 
+.mobileBreak {
+    display: none;
+}
+
 @media (max-width: 768px) {
+
+    .mobileBreak {
+        display: block;
+    }
 
     .footer {
         img {
@@ -30,6 +38,7 @@
 
         p {
             font-size: 13px;
+            text-align: center;
         }
     }
 }

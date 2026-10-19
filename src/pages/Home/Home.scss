@@ -1,0 +1,9 @@
+.mobileBreak {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobileBreak {
+        display: block;
+    }
+}
